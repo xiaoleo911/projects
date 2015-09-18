@@ -21,9 +21,9 @@
 			<div style="padding-top: 6px;">
 				<table cellpadding="0" cellspacing="0" border="0" width="100%">
 					<tr>
-						<td width="110" align="left"><a href="/" name="top"
+						<td width="110" align="left"><a href="<%=request.getContextPath() %>/index" name="top"
 							title="way to explore"> <img
-								src="pic/logo@2x.png?m=1346064962" border="0" alt="V2EX"
+								src="pic/logo@2x.png" border="0" alt="V2EX"
 								width="94" height="30" />
 						</a></td>
 						<td width="auto" align="left">
