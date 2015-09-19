@@ -109,14 +109,13 @@
 								<td width="48" valign="top" align="center"><a
 									href="/member/hiStarter"><img
 										src="//cdn.v2ex.co/avatar/74a7/043d/87144_normal.png?m=1422346144"
-										class="avatar" border="0" align="default" /></a></td>
+										class="avatar" border="0"/></a></td>
 								<td width="10"></td>
 
 								<td width="auto" valign="middle"><span class="item_title"><a
 										href="/t/221086#reply38">今晚 Q 群直播：对话顶级构架师茹云峰——作为创业团队 CTO
 											是怎样的体验</a></span>
-									<div class="sep5"></div> <span class="small fade"><div
-											class="votes"></div> <a class="node" href="/go/programmer">程序员</a>
+									<div class="sep5"></div> <span class="small fade"><a class="node" href="/go/programmer">程序员</a>
 										&nbsp;•&nbsp; <strong><a href="/member/hiStarter">hiStarter</a></strong>
 										&nbsp;•&nbsp; 置顶 &nbsp;•&nbsp; 最后回复来自 <strong><a
 											href="/member/dai269619118">dai269619118</a></strong></span></td>
@@ -136,7 +135,8 @@
 			<div id="Bottom">
 				<div class="content"></div>
 			</div>
-
+		</div>
+	</div>
 
 
 
