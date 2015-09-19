@@ -35,8 +35,8 @@
 							</div>
 						</td>
 						<td width="570" align="right" style="padding-top: 2px;"><a
-							href="/" class="top">首页</a>&nbsp;&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/signup.jsp"
-							class="top">注册</a>&nbsp;&nbsp;&nbsp;<a href="/signin" class="top">登录</a>
+							href="/<%=request.getContextPath() %>/index" class="top">首页</a>&nbsp;&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/signup.jsp"
+							class="top">注册</a>&nbsp;&nbsp;&nbsp;<a href="<%=request.getContextPath() %>/signin.jsp" class="top">登录</a>
 						</td>
 					</tr>
 				</table>
