@@ -11,7 +11,7 @@
 	
 	<h4 align="center">新用户注册</h4>
 	
-	<s:form action="admin" id="login" theme="simple">
+	<s:form action="signup" id="login" theme="simple">
 		<table>
 			<tr height="30px">
 				<td>
@@ -27,6 +27,11 @@
 				</td>
 				<td>
 					<input type="password" name="password"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="Submit" value="提交"/>
 				</td>
 			</tr>
 		</table>
