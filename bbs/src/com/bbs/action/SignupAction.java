@@ -33,23 +33,18 @@ public class SignupAction extends ActionSupport {
 		this.password = password;
 	}
 
-	public String loginAction() throws Exception {
+	public String login() throws Exception {
 
 		System.out.println("登录！");
 
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
-		String password1 = request.getParameter("password1");
-		if (name.isEmpty() || password.isEmpty() || password1.isEmpty()) {
+		if (name.isEmpty() || password.isEmpty()) {
 			return ERROR;
 		} else {
-			if (!password.equals(password1)) {
-				System.out.println("两次密码不一致！");
-				return ERROR;
-			}
 			AdminDao adminDao = new AdminDao();
-			Admin admin = adminDao.queryUser();
+			Admin admin = adminDao.queryUser(name,password);
 			if (admin.getName().equals(name)
 					&& admin.getPassword().equals(password)) {
 				return SUCCESS;

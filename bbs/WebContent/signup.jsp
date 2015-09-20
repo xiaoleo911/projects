@@ -11,7 +11,7 @@
 	
 	<h4 align="center">新用户注册</h4>
 	
-	<s:form action="signup" id="login" theme="simple">
+	<s:form action="signup" id="login" name="login" namespace="/" theme="simple">
 		<table>
 			<tr height="30px">
 				<td>

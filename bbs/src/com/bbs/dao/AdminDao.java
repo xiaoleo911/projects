@@ -49,25 +49,27 @@ public class AdminDao {
 
 	}
 	
-	public Admin queryUser() throws SQLException {
+	public Admin queryUser(String name, String password) throws SQLException {
 
 		Admin admin = new Admin();
 
 		ComboPooledDataSource ds = new ComboPooledDataSource("bbs");
 		Connection conn = ds.getConnection();
-		Statement st = conn.createStatement();
+		
+		String sql = "SELECT * FROM admin WHERE NAME=? AND PASSWORD=?;";
+		PreparedStatement st = conn.prepareStatement(sql);
 
 		try {
 
-			String sql = "SELECT * FROM admin";
-			ResultSet rs = st.executeQuery(sql);
-			while (rs.next()) {
-				String name = rs.getString(2);
-				String password = rs.getString(3);
-				admin.setName(name);
-				admin.setPassword(password);
-			}
-			if (rs != null)
+			st.setString(1, name);
+			st.setString(2, password);
+			ResultSet rs = st.executeQuery();
+			while(rs.next()){ 
+				   admin.setName(rs.getString(2));
+				   admin.setPassword(rs.getString(3));
+				} 
+			
+			if(rs != null)
 				rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
