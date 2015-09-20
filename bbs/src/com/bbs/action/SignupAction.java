@@ -1,6 +1,7 @@
 package com.bbs.action;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import com.bbs.dao.AdminDao;
 import com.bbs.model.Admin;
@@ -58,7 +59,18 @@ public class SignupAction extends ActionSupport {
 		return ERROR;
 	}
 
-	public String execute() throws Exception {
+	public String index() throws Exception {
+
+		System.out.println("indexÌø×ª£¡");
+		HttpServletResponse response = ServletActionContext.getResponse();
+		HttpServletResponse res = (HttpServletResponse) response;
+		res.sendRedirect("index.jsp");
+
+		return SUCCESS;
+
+	}
+
+	public String signup() throws Exception {
 
 		System.out.println("×¢²á");
 
@@ -77,7 +89,7 @@ public class SignupAction extends ActionSupport {
 			adminDao.insertUser(name, password);
 			return SUCCESS;
 		}
-		
+
 	}
 
 }

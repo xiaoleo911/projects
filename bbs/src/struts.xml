@@ -6,10 +6,16 @@
     
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="signup" class="com.bbs.action.SignupAction">
+		<action method="signup" name="signup" class="com.bbs.action.SignupAction">
 			<result name="success">/success.jsp</result>
 			<result name="error">/index.jsp</result>
 			
 		</action>
+		<action method="index" name="index" class="com.bbs.action.SignupAction">
+			<result name="success">/index.jsp</result>
+			<result name="error">/index.jsp</result>
+			
+		</action>
+		
 	</package>
 </struts>
