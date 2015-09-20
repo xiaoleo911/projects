@@ -31,6 +31,14 @@
 			</tr>
 			<tr>
 				<td>
+					请再次输入密码：
+				</td>
+				<td>
+					<input type="password" name="password1"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
 					<input type="submit" name="Submit" value="提交"/>
 				</td>
 			</tr>
