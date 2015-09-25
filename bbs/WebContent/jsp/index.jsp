@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>V2EX</title>
 
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/desktop.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/highlight.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath() %>/css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath() %>/css/basic.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath() %>/css/desktop.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath() %>/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath() %>/css/highlight.css" />
 
 
 </head>
@@ -22,9 +22,9 @@
 				<table cellpadding="0" cellspacing="0" border="0" width="100%">
 					<tr>
 						<td width="110" align="left">
-							<a href="<%=request.getContextPath() %>/index.jsp" name="top"
+							<a href="<%=request.getContextPath() %>/index" name="top"
 							title="way to explore"> <img
-								src="pic/logo@2x.png" border="0" alt="V2EX"
+								src="<%=request.getContextPath() %>/pic/logo@2x.png" border="0" alt="V2EX"
 								width="94" height="30" />
 							</a>
 						</td>
@@ -36,7 +36,8 @@
 							</div>
 						</td>
 						<td width="570" align="right" style="padding-top: 2px;">
-							<a href="<%=request.getContextPath() %>/index.jsp" class="top">首页</a>&nbsp;&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/signup.jsp"
+							
+							<a  href="<%=request.getContextPath() %>/jsp/index.jsp" class="top">首页</a>&nbsp;&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/signup.jsp"
 								class="top">注册
 							</a>
 							&nbsp;&nbsp;&nbsp;
