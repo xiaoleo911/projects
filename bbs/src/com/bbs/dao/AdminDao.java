@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.ServletActionContext;
 import org.junit.Test;
 
-import com.bbs.model.Admin;
+import com.bbs.entities.Admin;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class AdminDao {

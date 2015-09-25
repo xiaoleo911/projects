@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.bbs.dao.AdminDao;
-import com.bbs.model.Admin;
+import com.bbs.entities.Admin;
 
 import org.apache.struts2.ServletActionContext;
 
@@ -45,8 +45,8 @@ public class SignupAction extends ActionSupport {
 		} else {
 			AdminDao adminDao = new AdminDao();
 			Admin admin = adminDao.queryUser(name,password);
-			if (admin.getName().equals(name)
-					&& admin.getPassword().equals(password)) {
+			if (name.equals(admin.getName())
+					&& password.equals(admin.getPassword())) {
 				return SUCCESS;
 			}
 		}
